@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension	type="module" version="4.0.0" client="site" method="upgrade">
+	<name>Visforms</name>
+	<author>Aicha Vack, vi-solutions</author>
+	<creationDate>May 2022</creationDate>
+	<copyright>Copyright (C) vi-solutions. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>contact@vi-solutions.de</authorEmail>
+	<authorUrl>https://www.vi-solutions.de</authorUrl>
+	<version>4.1.7</version>
+	<description>MOD_VISFORMS_DESCRIPTION</description>
+	<namespace path="src">Visolutions\Module\Visforms</namespace>
+	<files>
+		<filename module="mod_visforms">mod_visforms.php</filename>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>mod_visforms.xml</filename>
+	</files>
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/mod_visforms.ini</language>
+		<language tag="en-GB">language/en-GB/mod_visforms.sys.ini</language>
+		<language tag="de-DE">language/de-DE/mod_visforms.ini</language>
+		<language tag="de-DE">language/de-DE/mod_visforms.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldprefix="Visolutions\Component\Visforms\Administrator\Field">
+				<field
+					name="catid"
+					type="modal_visforms"
+					extension="com_visforms"
+					multiple="false"
+					default=""
+					size="10"
+					label="MOD_VISFORMS_FORMSELECT_LABEL" >
+				</field>
+				<field name="connected_menu_item" type="menuitem"
+					   label="MOD_VISFORMS_CORRESPONDING_MENU_ITEM"
+					   description="MOD_VISFORMS_CORRESPONDING_MENU_ITEM_DESCR"
+					   default="">
+					<option value="">JGLOBAL_SELECT_AN_OPTION</option>
+				</field>
+				<field
+				name="show_title"
+				type="list"
+				label="JGLOBAL_SHOW_TITLE_LABEL"
+				description="MOD_VISFORMS_SHOW_TITLE_DESC"
+				default="1">
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			</fieldset>
+
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					class="custom-select" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" />
+                <field
+					name="cache"
+					type="hidden"
+					default="0"
+					/>
+				<field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

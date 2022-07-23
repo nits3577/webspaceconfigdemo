@@ -1,0 +1,19 @@
+
+/* Background: $link_color;*/
+.jqu-lightroom .sppb-carousel-extended-content-wrap,
+.page-item.active .page-link,
+.page-item.active .page-link:hover { background: $link_color; }
+
+/* Border color: $link_color;*/
+.page-item.active .page-link,
+.page-item.active .page-link:hover { border-color: $link_color; }
+
+/* Color: $text_color;*/
+.jqu-blog .sppb-addon-article { color: $text_color; }
+
+/* Color: $link_color;*/
+.article-list .article .article-header h1 a, .article-list .article .article-header h2 a,
+.article-details .article-header h1, .article-details .article-header h2 { color: $link_color; }
+
+/* Color: $link_color_hover;*/
+.sp-page-title .sp-page-title-sub-heading { color: $link_hover_color; }

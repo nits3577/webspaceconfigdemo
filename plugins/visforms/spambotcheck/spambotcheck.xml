@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="4.0.0" type="plugin" group="visforms" method="upgrade">
+	<name>plg_visforms_spambotcheck</name>
+	<author>Aicha Vack, vi-solutions</author>
+	<creationDate>May 2022</creationDate>
+	<copyright>Copyright (C) vi-solutions. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>conctact@vi-solutions.de</authorEmail>
+	<authorUrl>https://www.vi-solutions.de</authorUrl>
+	<version>4.1.7</version>
+	<loggerName>Visforms</loggerName>
+	<description>PLG_VISFORMS_SPAMBOTCHECK_XML_DESCRIPTION</description>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<filename plugin="spambotcheck">spambotcheck.php</filename>
+		<filename>index.html</filename>
+		<filename>script.php</filename>
+		<folder>spambotcheck</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/plg_visforms_spambotcheck.ini</language>
+		<language tag="en-GB">language/en-GB/plg_visforms_spambotcheck.sys.ini</language>
+		<language tag="de-DE">language/de-DE/plg_visforms_spambotcheck.ini</language>
+		<language tag="de-DE">language/de-DE/plg_visforms_spambotcheck.sys.ini</language>
+	</languages>
+	<config>
+	</config>
+</extension>

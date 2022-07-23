@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.0.0" type="plugin" group="editors-xtd" method="upgrade">
+	<name>plg_editors-xtd_visformfields</name>
+	<author>Aicha Vack, vi-solutions</author>
+	<creationDate>May 2022</creationDate>
+	<copyright>Copyright (C) vi-solutions. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>contact@vi-solutions.de</authorEmail>
+	<authorUrl>https://www.vi-solutions.de</authorUrl>
+	<version>4.1.7</version>
+	<description>PLG_VISFORMFIELDS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="visformfields">visformfields.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/plg_editors-xtd_visformfields.ini</language>
+		<language tag="en-GB">language/en-GB/plg_editors-xtd_visformfields.sys.ini</language>
+		<language tag="de-DE">language/de-DE/plg_editors-xtd_visformfields.ini</language>
+		<language tag="de-DE">language/de-DE/plg_editors-xtd_visformfields.sys.ini</language>
+	</languages>
+</extension>

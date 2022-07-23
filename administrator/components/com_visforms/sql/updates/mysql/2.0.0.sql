@@ -1,0 +1,12 @@
+ALTER TABLE `#__visforms` ADD COLUMN `access` int(11) NOT NULL default 0 AFTER `autopublish`;
+ALTER TABLE `#__visforms` ADD COLUMN `exportsettings` text AFTER `required`;
+ALTER TABLE `#__visforms` ADD COLUMN `emailfromname` text AFTER `emailfrom`;
+ALTER TABLE `#__visforms` MODIFY `hits` int(11) NOT NULL default 0;
+ALTER TABLE `#__visforms` MODIFY `created` datetime NOT NULL default '0000-00-00 00:00:00';
+ALTER TABLE `#__visforms` MODIFY `created_by` int(11) NOT NULL default 0;
+ALTER TABLE `#__visforms` modify checked_out int unsigned null;
+ALTER TABLE `#__visfields` ADD COLUMN `asset_id` int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `id`;
+ALTER TABLE `#__visfields` ADD COLUMN `created` datetime NOT NULL default '0000-00-00 00:00:00' AFTER `checked_out_time`;
+ALTER TABLE `#__visfields` ADD COLUMN `created_by` int(11) NOT NULL default 0 AFTER `created`;
+ALTER TABLE `#__visfields` ADD COLUMN `includefieldonexport` tinyint(4) not null DEFAULT 1 AFTER `fillwith`;
+ALTER TABLE `#__visfields` modify checked_out int unsigned null;

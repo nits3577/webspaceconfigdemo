@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<menu
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="urn:joomla.org"
+        xsi:schemaLocation="urn:joomla.org menu.xsd"
+>
+    <menuitem
+            title="COM_VISFORMS_FORM_FIELDS"
+            type="component"
+            class="class:visform"
+            link="index.php?option=com_visforms&amp;view=visfields&amp;fid="
+    />
+    <menuitem
+            title="COM_VISFORMS_PDF_TEMPLATES"
+            type="component"
+            class="class:visform"
+            link="index.php?option=com_visforms&amp;view=vispdfs&amp;fid="
+    />
+    <menuitem
+            title="COM_VISFORMS_VISFORMSDATA_VIEW_DEFAULT_TITLE"
+            type="component"
+            class="class:visform"
+            link="index.php?option=com_visforms&amp;view=visdatas&amp;fid="
+    />
+</menu>
